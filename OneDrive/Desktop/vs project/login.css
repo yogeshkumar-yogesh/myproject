@@ -1,0 +1,72 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    height: 300px;
+    width: 300px;
+    background-color:transparent;
+    border: 500px;
+    transition: 10sec;
+
+}
+
+
+
+.user #jj{
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    background-color: transparent;
+
+}
+#jk{
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    background-color: transparent;
+    
+}
+
+body{
+    background-image: url('bike-wallpaper-11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding-right: 10px;
+    color: white;
+    
+
+}
+
+.navItems{
+    margin-right: 20px;
+    font-size: larger;
+
+
+    
+}
+
+.navItems > a {
+    color: white;
+    text-decoration:none;
+    
+    
+    
+}
+.main-content{
+    background-color: black;
+}

@@ -1,0 +1,29 @@
+body{
+    background: yellow;
+
+}
+#a2{
+    background: blue;
+}
+#a3{
+    height: 30px;
+    width: 80px;
+    background: #000;
+    color: rgb(106, 16, 16);
+    border-radius: 10px;
+    border: 1px solid rgb(39, 37, 37);
+    transition: 0.5s;
+    font-weight: 8
+    
+    00;
+
+
+
+}
+#a3:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: 700;
+}

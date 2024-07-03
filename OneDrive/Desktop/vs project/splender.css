@@ -1,0 +1,257 @@
+#menubutton{
+    display: flex;
+    padding-left: 400px;
+    font-weight: 600;
+
+}
+body{
+   background-color: black; 
+}
+#f{
+    text-align: center;
+}
+#g{
+    text-align: center;
+    margin-right: 300px;
+    color: azure;
+    font-weight: 900;
+    
+}
+
+#head{
+    text-align: center;
+    color: black;
+    background-color: gray;
+    
+}
+#logo{
+    margin-top: -90px;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+/* styles.css */
+
+/* Reset default list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0,;
+    padding: 0;
+    margin-top: 0%;
+    overflow: hidden;
+
+    
+    
+
+    
+
+}
+
+/* Style each navigation link */
+nav ul li {
+    float: left;
+  
+  }
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/* Change background color of links on hover */
+nav ul li a:hover {
+    background-color: #555;
+}
+/* Responsive navigation */
+@media screen and (max-width: 600px) {  
+    nav ul li {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-left: -900px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        margin-left: 900px;
+        
+    }
+}
+
+#h{
+    margin-left: 1000px;
+}
+
+#D{
+    text-align: center;
+    font-size: large;
+    color: aqua;
+    margin-right: 60px;
+}
+
+.container{
+    text-align: center;
+     color: white;
+}
+#log{
+    margin-left: 130px;
+}
+/* Styles for slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    animation: fadeEffect 15s infinite;
+  }
+  
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Set the initial visibility */
+  .mySlides:nth-child(1) {
+    display: block;
+    opacity: 1;
+  }
+
+  .col{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+ #title{
+    text-align: center;
+    color: aliceblue;
+    
+ }
+
+ .rom{
+  padding: 0.5px;
+ }
+  
+ .column{
+  padding: 30px;
+ }
+
+ #tle{
+  text-align: center;
+  color: white;
+ }
+
+ #btn{
+  margin-left: 700px;
+
+ }
+#t{
+  text-align: center;
+  color: white;
+}
+
+#acc{
+  text-align: center;
+  color: white;
+}
+.para{
+  background-color: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#ab{
+  text-align: center;
+}
+
+.bike{
+  margin-right: 800px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide all images by default */
+.bike-slide {
+  display: none;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

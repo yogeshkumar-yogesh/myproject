@@ -1,0 +1,107 @@
+body{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+
+}
+
+container {
+    max-width: 90%;
+    margin: auto;
+}
+
+scontainer{
+    max-width:80% ;
+    margin: auto;
+}
+flex{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    height:10vh ;
+    line-height: 10vh;
+    background: white;
+    text-align: center;
+}
+
+.logo img{
+    margin-top: 20px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+
+}
+nav ul li{
+    margin-left: 20px;
+
+}
+nav li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    transition: 0.5s
+}
+nav li :hover{
+    color: #378234;
+
+}
+media button{
+    font-size: 40px;
+    display: none;
+
+
+}
+account i{
+    color: #378234;
+    margin: 30px 20px 0 0;
+
+}
+
+ @media only screen and(max-width:768px) {
+    .main_list {
+        overflow: hidden;
+        height: 0;
+        width: 300%;
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        padding: 0 0 0 40px;
+        transition: 0.5s;
+    }
+    nav.show_list{
+        height: 250px;
+        background: white;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+ }
+nav ul li a{
+    line-height: 40px;
+    display: table;
+}
+    
+ .media_button i {
+    display: block;
+    margin-top: 20px;
+    background: #378234;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+
+
+ }
+
+# mainlistDiv{
+
+    text-align:left;
+
+}

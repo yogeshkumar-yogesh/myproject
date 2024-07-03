@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content   ="width=device-width, initial-scale=1.0">
+    <title>Motorbike Company Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .company-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .company {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .company:hover {
+            transform: scale(1.1);
+        }
+        .selected {
+            border: 2px solid #007bff;
+        }
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Preferred Motorbike Company</h1>
+    <div class="company-list">
+        <div class="company" onclick="selectCompany('Harley-Davidson')">
+            <img src="./harley-davidson-logo.svg" alt="Harley-Davidson" width="200">
+        </div>
+        <div class="company" onclick="selectCompany('Honda')">
+            <img src="./honda-motorcycles-logo-11.png" alt="Honda" width="200">
+        </div>
+        <div class="company" onclick="selectCompany('Yamaha')">
+            <img src="./yamaha_logo-removebg-preview.png" alt="Yamaha" width="200"><br>
+        </div>
+        <div class="company" onclick="selectCompany('Harley-Davidson')">
+            <img src="./royal-enfield6316-removebg-preview (1).png" alt="Harley-Davidson" width="200">
+        </div>
+        <div class="company" onclick="selectCompany('Honda')">
+            <img src="./Suzuki_Motorcycle_India_Limited-Logo.wine-removebg-preview.png" alt="Honda" width="200">
+        </div>
+        <div class="company" onclick="selectCompany('Yamaha')">
+            <img src="./" alt="Yamaha" width="200">
+        </div>
+        <!-- Add more company logos as needed -->
+    </div>
+    <button class="btn-submit" onclick="submitChoice()">Submit</button>
+
+    <p id="selectedCompany"></p>
+
+    <script>
+        let selectedCompany = '';
+
+        function selectCompany(company) {
+            selectedCompany = company;
+            // Reset border for all companies
+            let companies = document.querySelectorAll('.company');
+            companies.forEach(comp => comp.classList.remove('selected'));
+            // Add border to the selected company
+            let selectedElement = document.querySelector(`.company img[alt='${company}']`).parentNode;
+            selectedElement.classList.add('selected');
+        }
+
+        function submitChoice() {
+            if (selectedCompany !== '') {
+                document.getElementById('selectedCompany').innerText = `You chose ${selectedCompany}.`;
+            } else {
+                alert('Please select a company.');
+            }
+        }
+    </script>
+</body>
+</html>
